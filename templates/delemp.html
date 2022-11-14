@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove an employee</title>
+</head>
+<body>
+    <h2>Office Employee System!</h2> <hr>
+    <h3>Enter the name of employee you want to delete!</h3>
+    <form action="/delemp" method="post">
+        {% csrf_token %}
+    <input type="text" name="name" id="name">
+    <button type="submit">Remove Employee</button>
+    </form>
+</body>
+</html>

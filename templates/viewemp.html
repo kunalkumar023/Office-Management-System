@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Employee</title>
+</head>
+<body>
+    <thead>
+    <h2>These are all Employee</h2> <hr>
+    <th>First Name    </th>
+    <th>Last Name </th>
+    <th>  Salary</th>
+    <th>  Bonus</th>
+    <th>  Hire Date</th>
+    </thead>
+
+    {% for emps in emps %}
+    <br>
+    <tbody>
+        <td>{{ emps.firstname }}</td>
+        <td>{{ emps.lastname }}</td>
+        <td>{{ emps.dep }}</td>
+        <td>{{ emps.salary }}</td>
+        <td>{{ emps.bonus }}</td>
+        <td>{{ emps.role }}</td>
+        <td>{{ emps.hiredate }}</td>
+    </tbody>
+    {% endfor %}
+</body>
+</html>
